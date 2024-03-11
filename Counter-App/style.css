@@ -33,7 +33,7 @@
 .col{
     width: 1000px;
     height: 100px;
-    border: red 5px solid;
+    /* border: red 5px solid; */
     display: flex;
     justify-content: center;
     text-align: center;
