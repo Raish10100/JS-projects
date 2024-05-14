@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Genrator App</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./output.css"> 
+    <!-- CSS -->
+</head>
+<body class="bg-[#1b1b3a] flex justify-center items-center w-[100vw] h-[100vh]">
+    <div class="main-container border-[2px] border-gray-500 rounded-lg mx-[15px] px-[10px] vs:mx-[20px] vs:px-[20px] mt-[-10px] py-[20px] vs:mt-0 sm:px-[80px] vs:py-[20px] w-[600px] flex flex-col justify-center items-center gap-[15px] text-[#ffffffbf]">
+        <h1 class="text-[25px] vs:text-[35px] text-center font-bold ">Password Generator</h1>
+        <input type="" name="" id="output-password" readonly  placeholder="Click on Generate button" class="w-[90%] pt-[3px] px-[15px] text-gray-500  text-[20px] rounded-md ">
+        <span id="show-error" class="text-red-700 text-center"></span>
+        <span id="copied-message" class="text-green-400 text-center"></span>
+        <div class="btn flex items-center  vs:mt-[0px] gap-[2px]  vs:gap-[15px] px-[10px] vs:pb-[25px]">
+            <button id="generate-btn" class="px-[10px] vs:px-[30px] py-[5px] vs:py-[7px] rounded-md bg-[#9881ff] hover:bg-[#9881ffb5] font-bold vs:text-[20px]">Generate</button>
+            <button id="copy-btn" onclick="copyToClipboard()" class="px-[5px] py-[5px] vs:px-[20px] vs:py-[7px] rounded-md bg-[#9881ff] hover:bg-[#9881ffb5] text-[15px] font-bold vs:text-[20px]">Copy To Clipboard</button>
+        </div>
+        <div id="feature-container" class="password-complexity-feature flex flex-col justify-center items-center w-[100%] gap-[15px] vs:gap-[10px]">
+            <div class=" flex justify-between w-[100%] items-center">
+                <p class="vs:text-[20px]">Password Length</p>
+                <input id="password-length" type="number" class="w-[80px] vs:p-[3px] bg-gray-900 rounded-md border-[1px] border-gray-600">
+            </div>
+            <div class=" flex justify-between w-[100%]">
+                <p class="vs:text-[20px]">Include uppercase letters</p> 
+                <input id="uppercase-letters" type="checkbox">
+            </div>
+            <div class=" flex justify-between w-[100%]"> 
+                <p class="vs:text-[20px]">Include lowercase letters</p>
+                <input  type="checkbox" name="" id="lowercase-letters">
+            </div>
+            <div class=" flex justify-between w-[100%]">
+                <p class="vs:text-[20px]">Include numbers</p>
+                <input type="checkbox" id="numbers">
+            </div>
+            <div class=" flex justify-between w-[100%]">
+                <p class="vs:text-[20px]">Include symbols</p>
+                <input type="checkbox" id="special-characters">
+            </div>
+        </div>
+    </div>
+    
+    <script src="./script.js"></script>
+</body>
+</html> 

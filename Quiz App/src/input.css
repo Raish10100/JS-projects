@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.option{
+  @apply  py-[8px] px-[15px] border-[1px] border-black cursor-pointer 
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="w-screen h-screen flex justify-center items-center ">
+
+    <!-- start page -->
+     <div id="start-page" class="start-page fixed top-[100px]  ">
+        <button id="start-btn" class="bg-[#333333] text-white px-[25px] py-[10px]">Start Quiz</button>
+    </div> 
+
+    <!-- quiz page -->
+     <div id="quiz-container" class="container  w-[800px] m-[10px] flex justify-center items-center flex-col pt-[20px]  px-[20px] border-[2px] border-black">
+        <div class="head-part w-[100%] bg-[#333333] p-[10px] flex justify-center items-center flex-col text-[#e8e5e5] ">
+            <h1 class="text-[30px] sm:text-[40px] ">Quiz App</h1>
+            <div class="Q-S flex justify-between mt-[30px] sm:mt-[0] items-center w-[100%] sm:text-[20px]">
+                <p >Question <span id="reached-Q">C-Q</span>/<span id="total-Q">t-Q</span></p>
+                <p>Score: <span id="score">0</span></p>
+            </div>
+        </div>
+        <div class="middle-part flex justify-start items-start w-[100%] flex-col">
+            <div id="question" class="question py-[20px] w-[100%] sm:text-[25px] text-start">Question</div>
+            <ul id="options" class="options flex flex-col gap-[10px] w-[100%]">
+               <li class="option">option 1</li> 
+               <li class="option">option 2</li>
+               <li class="option">option 3</li>
+               <li class="option">option 4</li>  
+            </ul>
+        </div>
+        <div class="btn py-[25px]">
+            <button id="next-btn" class="bg-black text-white px-[25px] py-[10px]">Next</button>
+        </div>
+    </div> 
+
+    <!--  achieved score page -->
+    <div id="result-page" class="result-container flex justify-center items-center flex-col gap-[20px] border-[2px] border-black px-[20px] sm:px-[50px] py-[30px] mx-[10px]">
+        <h1 class="text-[30px] sm:text-[40px] text-center">Quiz Completed!</h1>
+        <p class="text-[20px] text-[#595959]">Your Score: <span id="result-score">0</span></p>
+        <button id="restart-btn" class="bg-black text-white px-[25px] py-[10px]">Restart</button>
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
